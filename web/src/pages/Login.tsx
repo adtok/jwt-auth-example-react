@@ -48,10 +48,10 @@ export const Login: React.FC<RouteComponentProps> = ({ history }) => {
           }}
         >
           <div>
-            <input type="email" placeholder="email" onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" name="email" placeholder="email" onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div>
-            <input type="password" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" name="password" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
           </div>
           <button type="submit">Login</button>
         </form>
